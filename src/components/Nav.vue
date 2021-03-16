@@ -63,6 +63,8 @@ export default {
     }else{
     this.dir="ltr"; 
      }
+     this.$i18n.locale = lang;
+
      this.lang=lang;
 localStorage.setItem('dir',this.dir);
     this.$store.dispatch('direaction',this.dir);
